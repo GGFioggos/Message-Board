@@ -1,3 +1,8 @@
+li {
+  margin-top: 30px;
+  list-style: none;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -5,4 +10,16 @@ body {
 
 a {
   color: #00B7FF;
+}
+
+.date {
+  font-size: 1.1rem;
+}
+
+.msg {
+  font-size: 1.5rem;
+}
+
+.user {
+  font-size: 1.3rem;
 }

@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <a href="/new">New message</a>
+  <h1>
+    <%=title%>
+  </h1>
+  <ul>
+    <% for(const msg of messages) {%>
+      <li>
+        <div class="user"><strong>
+            <%=msg.user%>
+          </strong>
+        </div class="msg">
+        <%=msg.text%>
+          <div class="date"><sub>
+              <%=msg.added%>
+            </sub></div>
+      </li>
+      <% } %>
+  </ul>
+</body>
+
 </html>
